@@ -1,0 +1,1479 @@
+services:
+  accessanalyzer:
+    service_name: AccessAnalyzer
+    resources:
+      analyzer: Analyzer
+  acmpca:
+    service_name: ACMPCA
+    resources:
+      certificate: Certificate
+      certificateauthority: CertificateAuthority
+      certificateauthorityactivation: CertificateAuthorityActivation
+      permission: Permission
+  amplify:
+    service_name: Amplify
+    resources:
+      app: App
+      branch: Branch
+      domain: Domain
+  amplifyuibuilder:
+    service_name: AmplifyUIBuilder
+    resources:
+      component: Component
+      form: Form
+      theme: Theme
+  apigateway:
+    service_name: ApiGateway
+    resources:
+      account: Account
+      apikey: ApiKey
+      authorizer: Authorizer
+      basepathmapping: BasePathMapping
+      clientcertificate: ClientCertificate
+      deployment: Deployment
+      documentationpart: DocumentationPart
+      documentationversion: DocumentationVersion
+      domainname: DomainName
+      gatewayresponse: GatewayResponse
+      method: Method
+      model: Model
+      requestvalidator: RequestValidator
+      resource: Resource
+      restapi: RestApi
+      stage: Stage
+      usageplan: UsagePlan
+      usageplankey: UsagePlanKey
+      vpclink: VpcLink
+  apigatewayv2:
+    service_name: ApiGatewayV2
+    resources:
+      api: Api
+      apimapping: ApiMapping
+      authorizer: Authorizer
+      deployment: Deployment
+      domainname: DomainName
+      integrationresponse: IntegrationResponse
+      model: Model
+      route: Route
+      routeresponse: RouteResponse
+      vpclink: VpcLink
+  appconfig:
+    service_name: AppConfig
+    resources:
+      application: Application
+      configurationprofile: ConfigurationProfile
+      extension: Extension
+      extensionassociation: ExtensionAssociation
+  appflow:
+    service_name: AppFlow
+    resources:
+      connector: Connector
+      connectorprofile: ConnectorProfile
+      flow: Flow
+  appintegrations:
+    service_name: AppIntegrations
+    resources:
+      dataintegration: DataIntegration
+      eventintegration: EventIntegration
+  applicationautoscaling:
+    service_name: ApplicationAutoScaling
+    resources:
+      scalabletarget: ScalableTarget
+      scalingpolicy: ScalingPolicy
+  applicationinsights:
+    service_name: ApplicationInsights
+    resources:
+      application: Application
+  apprunner:
+    service_name: AppRunner
+    resources:
+      autoscalingconfiguration: AutoScalingConfiguration
+      observabilityconfiguration: ObservabilityConfiguration
+      service: Service
+      vpcconnector: VpcConnector
+      vpcingressconnection: VpcIngressConnection
+  appstream:
+    service_name: AppStream
+    resources:
+      appblock: AppBlock
+      appblockbuilder: AppBlockBuilder
+      application: Application
+      applicationentitlementassociation: ApplicationEntitlementAssociation
+      applicationfleetassociation: ApplicationFleetAssociation
+      directoryconfig: DirectoryConfig
+      entitlement: Entitlement
+      imagebuilder: ImageBuilder
+  appsync:
+    service_name: AppSync
+    resources:
+      domainname: DomainName
+      domainnameapiassociation: DomainNameApiAssociation
+      functionconfiguration: FunctionConfiguration
+      resolver: Resolver
+      sourceapiassociation: SourceApiAssociation
+  aps:
+    service_name: APS
+    resources:
+      rulegroupsnamespace: RuleGroupsNamespace
+      workspace: Workspace
+  athena:
+    service_name: Athena
+    resources:
+      capacityreservation: CapacityReservation
+      datacatalog: DataCatalog
+      namedquery: NamedQuery
+      preparedstatement: PreparedStatement
+      workgroup: WorkGroup
+  auditmanager:
+    service_name: AuditManager
+    resources:
+      assessment: Assessment
+  autoscaling:
+    service_name: AutoScaling
+    resources:
+      autoscalinggroup: AutoScalingGroup
+      launchconfiguration: LaunchConfiguration
+      lifecyclehook: LifecycleHook
+      scalingpolicy: ScalingPolicy
+      scheduledaction: ScheduledAction
+      warmpool: WarmPool
+  backup:
+    service_name: Backup
+    resources:
+      backupplan: BackupPlan
+      backupselection: BackupSelection
+      backupvault: BackupVault
+      framework: Framework
+      reportplan: ReportPlan
+  backupgateway:
+    service_name: BackupGateway
+    resources:
+      hypervisor: Hypervisor
+  batch:
+    service_name: Batch
+    resources:
+      computeenvironment: ComputeEnvironment
+      jobqueue: JobQueue
+      schedulingpolicy: SchedulingPolicy
+  billingconductor:
+    service_name: BillingConductor
+    resources:
+      billinggroup: BillingGroup
+      customlineitem: CustomLineItem
+      pricingplan: PricingPlan
+      pricingrule: PricingRule
+  budgets:
+    service_name: Budgets
+    resources:
+      budgetsaction: BudgetsAction
+  cassandra:
+    service_name: Cassandra
+    resources:
+      keyspace: Keyspace
+      table: Table
+  ce:
+    service_name: CE
+    resources:
+      anomalymonitor: AnomalyMonitor
+      anomalysubscription: AnomalySubscription
+      costcategory: CostCategory
+  certificatemanager:
+    service_name: CertificateManager
+    resources:
+      account: Account
+  chatbot:
+    service_name: Chatbot
+    resources:
+      microsoftteamschannelconfiguration: MicrosoftTeamsChannelConfiguration
+      slackchannelconfiguration: SlackChannelConfiguration
+  cleanrooms:
+    service_name: CleanRooms
+    resources:
+      analysistemplate: AnalysisTemplate
+      collaboration: Collaboration
+      configuredtable: ConfiguredTable
+      configuredtableassociation: ConfiguredTableAssociation
+      membership: Membership
+  cloudformation:
+    service_name: CloudFormation
+    resources:
+      hookdefaultversion: HookDefaultVersion
+      hooktypeconfig: HookTypeConfig
+      hookversion: HookVersion
+      moduledefaultversion: ModuleDefaultVersion
+      moduleversion: ModuleVersion
+      publictypeversion: PublicTypeVersion
+      publisher: Publisher
+      resourcedefaultversion: ResourceDefaultVersion
+      resourceversion: ResourceVersion
+      stack: Stack
+      stackset: StackSet
+      typeactivation: TypeActivation
+  cloudfront:
+    service_name: CloudFront
+    resources:
+      cachepolicy: CachePolicy
+      cloudfrontoriginaccessidentity: CloudFrontOriginAccessIdentity
+      continuousdeploymentpolicy: ContinuousDeploymentPolicy
+      distribution: Distribution
+      function: Function
+      keygroup: KeyGroup
+      monitoringsubscription: MonitoringSubscription
+      originaccesscontrol: OriginAccessControl
+      originrequestpolicy: OriginRequestPolicy
+      publickey: PublicKey
+      realtimelogconfig: RealtimeLogConfig
+      responseheaderspolicy: ResponseHeadersPolicy
+  cloudtrail:
+    service_name: CloudTrail
+    resources:
+      channel: Channel
+      eventdatastore: EventDataStore
+      resourcepolicy: ResourcePolicy
+      trail: Trail
+  cloudwatch:
+    service_name: CloudWatch
+    resources:
+      alarm: Alarm
+      compositealarm: CompositeAlarm
+      metricstream: MetricStream
+  codeartifact:
+    service_name: CodeArtifact
+    resources:
+      domain: Domain
+      repository: Repository
+  codedeploy:
+    service_name: CodeDeploy
+    resources:
+      application: Application
+      deploymentconfig: DeploymentConfig
+  codeguruprofiler:
+    service_name: CodeGuruProfiler
+    resources:
+      profilinggroup: ProfilingGroup
+  codegurureviewer:
+    service_name: CodeGuruReviewer
+    resources:
+      repositoryassociation: RepositoryAssociation
+  codepipeline:
+    service_name: CodePipeline
+    resources:
+      customactiontype: CustomActionType
+  codestarconnections:
+    service_name: CodeStarConnections
+    resources:
+      connection: Connection
+  codestarnotifications:
+    service_name: CodeStarNotifications
+    resources:
+      notificationrule: NotificationRule
+  cognito:
+    service_name: Cognito
+    resources:
+      identitypoolprincipaltag: IdentityPoolPrincipalTag
+      logdeliveryconfiguration: LogDeliveryConfiguration
+      userpool: UserPool
+      userpoolclient: UserPoolClient
+      userpoolgroup: UserPoolGroup
+      userpooluser: UserPoolUser
+      userpoolusertogroupattachment: UserPoolUserToGroupAttachment
+  comprehend:
+    service_name: Comprehend
+    resources:
+      documentclassifier: DocumentClassifier
+      flywheel: Flywheel
+  config:
+    service_name: Config
+    resources:
+      aggregationauthorization: AggregationAuthorization
+      configrule: ConfigRule
+      configurationaggregator: ConfigurationAggregator
+      conformancepack: ConformancePack
+      organizationconformancepack: OrganizationConformancePack
+      storedquery: StoredQuery
+  connect:
+    service_name: Connect
+    resources:
+      approvedorigin: ApprovedOrigin
+      contactflow: ContactFlow
+      contactflowmodule: ContactFlowModule
+      evaluationform: EvaluationForm
+      hoursofoperation: HoursOfOperation
+      instance: Instance
+      instancestorageconfig: InstanceStorageConfig
+      integrationassociation: IntegrationAssociation
+      phonenumber: PhoneNumber
+      prompt: Prompt
+      queue: Queue
+      quickconnect: QuickConnect
+      routingprofile: RoutingProfile
+      rule: Rule
+      securitykey: SecurityKey
+      securityprofile: SecurityProfile
+      tasktemplate: TaskTemplate
+      trafficdistributiongroup: TrafficDistributionGroup
+      user: User
+      userhierarchygroup: UserHierarchyGroup
+      view: View
+      viewversion: ViewVersion
+  connectcampaigns:
+    service_name: ConnectCampaigns
+    resources:
+      campaign: Campaign
+  controltower:
+    service_name: ControlTower
+    resources:
+      enabledcontrol: EnabledControl
+  cur:
+    service_name: CUR
+    resources:
+      reportdefinition: ReportDefinition
+  customerprofiles:
+    service_name: CustomerProfiles
+    resources:
+      calculatedattributedefinition: CalculatedAttributeDefinition
+      domain: Domain
+      eventstream: EventStream
+      integration: Integration
+      objecttype: ObjectType
+  databrew:
+    service_name: DataBrew
+    resources:
+      dataset: Dataset
+      job: Job
+      project: Project
+      recipe: Recipe
+      ruleset: Ruleset
+      schedule: Schedule
+  datapipeline:
+    service_name: DataPipeline
+    resources:
+      pipeline: Pipeline
+  datasync:
+    service_name: DataSync
+    resources:
+      agent: Agent
+      locationazureblob: LocationAzureBlob
+      locationefs: LocationEFS
+      locationfsxlustre: LocationFSxLustre
+      locationfsxontap: LocationFSxONTAP
+      locationfsxopenzfs: LocationFSxOpenZFS
+      locationfsxwindows: LocationFSxWindows
+      locationhdfs: LocationHDFS
+      locationnfs: LocationNFS
+      locationobjectstorage: LocationObjectStorage
+      locations3: LocationS3
+      locationsmb: LocationSMB
+      storagesystem: StorageSystem
+      task: Task
+  detective:
+    service_name: Detective
+    resources:
+      graph: Graph
+      memberinvitation: MemberInvitation
+      organizationadmin: OrganizationAdmin
+  devicefarm:
+    service_name: DeviceFarm
+    resources:
+      devicepool: DevicePool
+      instanceprofile: InstanceProfile
+      networkprofile: NetworkProfile
+      project: Project
+      testgridproject: TestGridProject
+      vpceconfiguration: VPCEConfiguration
+  devopsguru:
+    service_name: DevOpsGuru
+    resources:
+      loganomalydetectionintegration: LogAnomalyDetectionIntegration
+      notificationchannel: NotificationChannel
+      resourcecollection: ResourceCollection
+  directoryservice:
+    service_name: DirectoryService
+    resources:
+      simplead: SimpleAD
+  dms:
+    service_name: DMS
+    resources:
+      replicationconfig: ReplicationConfig
+  docdbelastic:
+    service_name: DocDBElastic
+    resources:
+      cluster: Cluster
+  dynamodb:
+    service_name: DynamoDB
+    resources:
+      globaltable: GlobalTable
+      table: Table
+  ec2:
+    service_name: EC2
+    resources:
+      capacityreservation: CapacityReservation
+      capacityreservationfleet: CapacityReservationFleet
+      carriergateway: CarrierGateway
+      customergateway: CustomerGateway
+      dhcpoptions: DHCPOptions
+      ec2fleet: EC2Fleet
+      egressonlyinternetgateway: EgressOnlyInternetGateway
+      eip: EIP
+      eipassociation: EIPAssociation
+      enclavecertificateiamroleassociation: EnclaveCertificateIamRoleAssociation
+      flowlog: FlowLog
+      gatewayroutetableassociation: GatewayRouteTableAssociation
+      host: Host
+      instanceconnectendpoint: InstanceConnectEndpoint
+      internetgateway: InternetGateway
+      ipam: IPAM
+      ipamallocation: IPAMAllocation
+      ipampool: IPAMPool
+      ipampoolcidr: IPAMPoolCidr
+      ipamresourcediscovery: IPAMResourceDiscovery
+      ipamresourcediscoveryassociation: IPAMResourceDiscoveryAssociation
+      ipamscope: IPAMScope
+      keypair: KeyPair
+      launchtemplate: LaunchTemplate
+      localgatewayroute: LocalGatewayRoute
+      localgatewayroutetable: LocalGatewayRouteTable
+      localgatewayroutetablevirtualinterfacegroupassociation: LocalGatewayRouteTableVirtualInterfaceGroupAssociation
+      localgatewayroutetablevpcassociation: LocalGatewayRouteTableVPCAssociation
+      natgateway: NatGateway
+      networkacl: NetworkAcl
+      networkaclentry: NetworkAclEntry
+      networkinsightsaccessscope: NetworkInsightsAccessScope
+      networkinsightsaccessscopeanalysis: NetworkInsightsAccessScopeAnalysis
+      networkinsightsanalysis: NetworkInsightsAnalysis
+      networkinsightspath: NetworkInsightsPath
+      networkinterface: NetworkInterface
+      networkinterfaceattachment: NetworkInterfaceAttachment
+      networkperformancemetricsubscription: NetworkPerformanceMetricSubscription
+      placementgroup: PlacementGroup
+      prefixlist: PrefixList
+      route: Route
+      routetable: RouteTable
+      spotfleet: SpotFleet
+      subnet: Subnet
+      subnetcidrblock: SubnetCidrBlock
+      subnetnetworkaclassociation: SubnetNetworkAclAssociation
+      subnetroutetableassociation: SubnetRouteTableAssociation
+      transitgateway: TransitGateway
+      transitgatewayattachment: TransitGatewayAttachment
+      transitgatewayconnect: TransitGatewayConnect
+      transitgatewaymulticastdomain: TransitGatewayMulticastDomain
+      transitgatewaymulticastdomainassociation: TransitGatewayMulticastDomainAssociation
+      transitgatewaymulticastgroupmember: TransitGatewayMulticastGroupMember
+      transitgatewaymulticastgroupsource: TransitGatewayMulticastGroupSource
+      transitgatewaypeeringattachment: TransitGatewayPeeringAttachment
+      transitgatewayroutetable: TransitGatewayRouteTable
+      transitgatewayvpcattachment: TransitGatewayVpcAttachment
+      verifiedaccessendpoint: VerifiedAccessEndpoint
+      verifiedaccessgroup: VerifiedAccessGroup
+      verifiedaccessinstance: VerifiedAccessInstance
+      verifiedaccesstrustprovider: VerifiedAccessTrustProvider
+      volume: Volume
+      volumeattachment: VolumeAttachment
+      vpc: VPC
+      vpcdhcpoptionsassociation: VPCDHCPOptionsAssociation
+      vpcendpoint: VPCEndpoint
+      vpcendpointconnectionnotification: VPCEndpointConnectionNotification
+      vpcendpointservice: VPCEndpointService
+      vpcendpointservicepermissions: VPCEndpointServicePermissions
+      vpcgatewayattachment: VPCGatewayAttachment
+      vpcpeeringconnection: VPCPeeringConnection
+      vpnconnection: VPNConnection
+      vpnconnectionroute: VPNConnectionRoute
+      vpngateway: VPNGateway
+  ecr:
+    service_name: ECR
+    resources:
+      publicrepository: PublicRepository
+      pullthroughcacherule: PullThroughCacheRule
+      registrypolicy: RegistryPolicy
+      replicationconfiguration: ReplicationConfiguration
+      repository: Repository
+  ecs:
+    service_name: ECS
+    resources:
+      capacityprovider: CapacityProvider
+      cluster: Cluster
+      clustercapacityproviderassociations: ClusterCapacityProviderAssociations
+      primarytaskset: PrimaryTaskSet
+      service: Service
+      taskdefinition: TaskDefinition
+      taskset: TaskSet
+  efs:
+    service_name: EFS
+    resources:
+      accesspoint: AccessPoint
+      filesystem: FileSystem
+      mounttarget: MountTarget
+  eks:
+    service_name: EKS
+    resources:
+      addon: Addon
+      cluster: Cluster
+      fargateprofile: FargateProfile
+      identityproviderconfig: IdentityProviderConfig
+      nodegroup: Nodegroup
+  elasticache:
+    service_name: ElastiCache
+    resources:
+      globalreplicationgroup: GlobalReplicationGroup
+      subnetgroup: SubnetGroup
+      user: User
+      usergroup: UserGroup
+  elasticbeanstalk:
+    service_name: ElasticBeanstalk
+    resources:
+      application: Application
+      applicationversion: ApplicationVersion
+      configurationtemplate: ConfigurationTemplate
+      environment: Environment
+  elasticloadbalancingv2:
+    service_name: ElasticLoadBalancingV2
+    resources:
+      listener: Listener
+      listenerrule: ListenerRule
+      loadbalancer: LoadBalancer
+      targetgroup: TargetGroup
+  emr:
+    service_name: EMR
+    resources:
+      securityconfiguration: SecurityConfiguration
+      step: Step
+      studio: Studio
+      studiosessionmapping: StudioSessionMapping
+      walworkspace: WALWorkspace
+  emrcontainers:
+    service_name: EMRContainers
+    resources:
+      virtualcluster: VirtualCluster
+  emrserverless:
+    service_name: EMRServerless
+    resources:
+      application: Application
+  entityresolution:
+    service_name: EntityResolution
+    resources:
+      idmappingworkflow: IdMappingWorkflow
+      matchingworkflow: MatchingWorkflow
+      schemamapping: SchemaMapping
+  events:
+    service_name: Events
+    resources:
+      apidestination: ApiDestination
+      archive: Archive
+      connection: Connection
+      endpoint: Endpoint
+      eventbus: EventBus
+      rule: Rule
+  eventschemas:
+    service_name: EventSchemas
+    resources:
+      registrypolicy: RegistryPolicy
+  evidently:
+    service_name: Evidently
+    resources:
+      experiment: Experiment
+      feature: Feature
+      launch: Launch
+      project: Project
+      segment: Segment
+  finspace:
+    service_name: FinSpace
+    resources:
+      environment: Environment
+  fis:
+    service_name: FIS
+    resources:
+      experimenttemplate: ExperimentTemplate
+  fms:
+    service_name: FMS
+    resources:
+      notificationchannel: NotificationChannel
+      policy: Policy
+      resourceset: ResourceSet
+  forecast:
+    service_name: Forecast
+    resources:
+      dataset: Dataset
+      datasetgroup: DatasetGroup
+  frauddetector:
+    service_name: FraudDetector
+    resources:
+      detector: Detector
+      entitytype: EntityType
+      eventtype: EventType
+      label: Label
+      list: List
+      outcome: Outcome
+      variable: Variable
+  fsx:
+    service_name: FSx
+    resources:
+      datarepositoryassociation: DataRepositoryAssociation
+  gamelift:
+    service_name: GameLift
+    resources:
+      alias: Alias
+      build: Build
+      fleet: Fleet
+      gameservergroup: GameServerGroup
+      location: Location
+  globalaccelerator:
+    service_name: GlobalAccelerator
+    resources:
+      accelerator: Accelerator
+      endpointgroup: EndpointGroup
+      listener: Listener
+  glue:
+    service_name: Glue
+    resources:
+      registry: Registry
+      schema: Schema
+      schemaversion: SchemaVersion
+      schemaversionmetadata: SchemaVersionMetadata
+  grafana:
+    service_name: Grafana
+    resources:
+      workspace: Workspace
+  greengrassv2:
+    service_name: GreengrassV2
+    resources:
+      componentversion: ComponentVersion
+      deployment: Deployment
+  groundstation:
+    service_name: GroundStation
+    resources:
+      config: Config
+      dataflowendpointgroup: DataflowEndpointGroup
+      missionprofile: MissionProfile
+  guardduty:
+    service_name: GuardDuty
+    resources:
+      detector: Detector
+  healthimaging:
+    service_name: HealthImaging
+    resources:
+      datastore: Datastore
+  healthlake:
+    service_name: HealthLake
+    resources:
+      fhirdatastore: FHIRDatastore
+  iam:
+    service_name: IAM
+    resources:
+      group: Group
+      grouppolicy: GroupPolicy
+      instanceprofile: InstanceProfile
+      managedpolicy: ManagedPolicy
+      oidcprovider: OIDCProvider
+      policy: Policy
+      role: Role
+      rolepolicy: RolePolicy
+      samlprovider: SAMLProvider
+      servercertificate: ServerCertificate
+      servicelinkedrole: ServiceLinkedRole
+      user: User
+      userpolicy: UserPolicy
+      virtualmfadevice: VirtualMFADevice
+  identitystore:
+    service_name: IdentityStore
+    resources:
+      group: Group
+      groupmembership: GroupMembership
+  imagebuilder:
+    service_name: ImageBuilder
+    resources:
+      component: Component
+      containerrecipe: ContainerRecipe
+      distributionconfiguration: DistributionConfiguration
+      image: Image
+      imagepipeline: ImagePipeline
+      imagerecipe: ImageRecipe
+      infrastructureconfiguration: InfrastructureConfiguration
+  inspector:
+    service_name: Inspector
+    resources:
+      assessmenttarget: AssessmentTarget
+      assessmenttemplate: AssessmentTemplate
+      resourcegroup: ResourceGroup
+  inspectorv2:
+    service_name: InspectorV2
+    resources:
+      filter: Filter
+  internetmonitor:
+    service_name: InternetMonitor
+    resources:
+      monitor: Monitor
+  iot:
+    service_name: IoT
+    resources:
+      accountauditconfiguration: AccountAuditConfiguration
+      authorizer: Authorizer
+      billinggroup: BillingGroup
+      cacertificate: CACertificate
+      certificate: Certificate
+      custommetric: CustomMetric
+      dimension: Dimension
+      domainconfiguration: DomainConfiguration
+      fleetmetric: FleetMetric
+      jobtemplate: JobTemplate
+      logging: Logging
+      mitigationaction: MitigationAction
+      policy: Policy
+      provisioningtemplate: ProvisioningTemplate
+      resourcespecificlogging: ResourceSpecificLogging
+      rolealias: RoleAlias
+      scheduledaudit: ScheduledAudit
+      securityprofile: SecurityProfile
+      softwarepackage: SoftwarePackage
+      softwarepackageversion: SoftwarePackageVersion
+      thing: Thing
+      thinggroup: ThingGroup
+      thingtype: ThingType
+      topicrule: TopicRule
+      topicruledestination: TopicRuleDestination
+  iotanalytics:
+    service_name: IoTAnalytics
+    resources:
+      channel: Channel
+      dataset: Dataset
+      datastore: Datastore
+      pipeline: Pipeline
+  iotcoredeviceadvisor:
+    service_name: IoTCoreDeviceAdvisor
+    resources:
+      suitedefinition: SuiteDefinition
+  iotevents:
+    service_name: IoTEvents
+    resources:
+      alarmmodel: AlarmModel
+      detectormodel: DetectorModel
+      input: Input
+  iotfleethub:
+    service_name: IoTFleetHub
+    resources:
+      application: Application
+  iotfleetwise:
+    service_name: IoTFleetWise
+    resources:
+      campaign: Campaign
+      decodermanifest: DecoderManifest
+      fleet: Fleet
+      modelmanifest: ModelManifest
+      signalcatalog: SignalCatalog
+      vehicle: Vehicle
+  iotsitewise:
+    service_name: IoTSiteWise
+    resources:
+      accesspolicy: AccessPolicy
+      asset: Asset
+      assetmodel: AssetModel
+      dashboard: Dashboard
+      gateway: Gateway
+      portal: Portal
+      project: Project
+  iottwinmaker:
+    service_name: IoTTwinMaker
+    resources:
+      componenttype: ComponentType
+      entity: Entity
+      scene: Scene
+      syncjob: SyncJob
+      workspace: Workspace
+  iotwireless:
+    service_name: IoTWireless
+    resources:
+      destination: Destination
+      deviceprofile: DeviceProfile
+      fuotatask: FuotaTask
+      multicastgroup: MulticastGroup
+      networkanalyzerconfiguration: NetworkAnalyzerConfiguration
+      partneraccount: PartnerAccount
+      serviceprofile: ServiceProfile
+      taskdefinition: TaskDefinition
+      wirelessdevice: WirelessDevice
+      wirelessdeviceimporttask: WirelessDeviceImportTask
+      wirelessgateway: WirelessGateway
+  ivs:
+    service_name: IVS
+    resources:
+      channel: Channel
+      playbackkeypair: PlaybackKeyPair
+      recordingconfiguration: RecordingConfiguration
+      streamkey: StreamKey
+  ivschat:
+    service_name: IVSChat
+    resources:
+      loggingconfiguration: LoggingConfiguration
+      room: Room
+  kafkaconnect:
+    service_name: KafkaConnect
+    resources:
+      connector: Connector
+  kendra:
+    service_name: Kendra
+    resources:
+      datasource: DataSource
+      faq: Faq
+      index: Index
+  kendraranking:
+    service_name: KendraRanking
+    resources:
+      executionplan: ExecutionPlan
+  kinesis:
+    service_name: Kinesis
+    resources:
+      stream: Stream
+  kinesisanalyticsv2:
+    service_name: KinesisAnalyticsV2
+    resources:
+      application: Application
+  kinesisfirehose:
+    service_name: KinesisFirehose
+    resources:
+      deliverystream: DeliveryStream
+  kinesisvideo:
+    service_name: KinesisVideo
+    resources:
+      signalingchannel: SignalingChannel
+      stream: Stream
+  kms:
+    service_name: KMS
+    resources:
+      alias: Alias
+      key: Key
+      replicakey: ReplicaKey
+  lakeformation:
+    service_name: LakeFormation
+    resources:
+      datacellsfilter: DataCellsFilter
+      principalpermissions: PrincipalPermissions
+      tag: Tag
+      tagassociation: TagAssociation
+  lambda:
+    service_name: Lambda
+    resources:
+      codesigningconfig: CodeSigningConfig
+      eventsourcemapping: EventSourceMapping
+      function: Function
+      layerversion: LayerVersion
+      layerversionpermission: LayerVersionPermission
+      permission: Permission
+      url: Url
+      version: Version
+  lex:
+    service_name: Lex
+    resources:
+      bot: Bot
+      botalias: BotAlias
+      botversion: BotVersion
+      resourcepolicy: ResourcePolicy
+  licensemanager:
+    service_name: LicenseManager
+    resources:
+      grant: Grant
+      license: License
+  lightsail:
+    service_name: Lightsail
+    resources:
+      alarm: Alarm
+      bucket: Bucket
+      certificate: Certificate
+      container: Container
+      database: Database
+      disk: Disk
+      distribution: Distribution
+      instance: Instance
+      loadbalancer: LoadBalancer
+      loadbalancertlscertificate: LoadBalancerTlsCertificate
+      staticip: StaticIp
+  location:
+    service_name: Location
+    resources:
+      geofencecollection: GeofenceCollection
+      map: Map
+      placeindex: PlaceIndex
+      routecalculator: RouteCalculator
+      tracker: Tracker
+      trackerconsumer: TrackerConsumer
+  logs:
+    service_name: Logs
+    resources:
+      accountpolicy: AccountPolicy
+      destination: Destination
+      loggroup: LogGroup
+      logstream: LogStream
+      metricfilter: MetricFilter
+      querydefinition: QueryDefinition
+      resourcepolicy: ResourcePolicy
+      subscriptionfilter: SubscriptionFilter
+  lookoutequipment:
+    service_name: LookoutEquipment
+    resources:
+      inferencescheduler: InferenceScheduler
+  lookoutmetrics:
+    service_name: LookoutMetrics
+    resources:
+      alert: Alert
+      anomalydetector: AnomalyDetector
+  lookoutvision:
+    service_name: LookoutVision
+    resources:
+      project: Project
+  m2:
+    service_name: M2
+    resources:
+      application: Application
+      environment: Environment
+  macie:
+    service_name: Macie
+    resources:
+      allowlist: AllowList
+      customdataidentifier: CustomDataIdentifier
+      findingsfilter: FindingsFilter
+      session: Session
+  managedblockchain:
+    service_name: ManagedBlockchain
+    resources:
+      accessor: Accessor
+  mediaconnect:
+    service_name: MediaConnect
+    resources:
+      bridge: Bridge
+      bridgeoutput: BridgeOutput
+      bridgesource: BridgeSource
+      flow: Flow
+      flowentitlement: FlowEntitlement
+      flowoutput: FlowOutput
+      flowsource: FlowSource
+      flowvpcinterface: FlowVpcInterface
+      gateway: Gateway
+  medialive:
+    service_name: MediaLive
+    resources:
+      multiplex: Multiplex
+      multiplexprogram: Multiplexprogram
+  mediapackage:
+    service_name: MediaPackage
+    resources:
+      asset: Asset
+      channel: Channel
+      originendpoint: OriginEndpoint
+      packagingconfiguration: PackagingConfiguration
+      packaginggroup: PackagingGroup
+  mediapackagev2:
+    service_name: MediaPackageV2
+    resources:
+      channel: Channel
+      channelgroup: ChannelGroup
+      channelpolicy: ChannelPolicy
+      originendpoint: OriginEndpoint
+      originendpointpolicy: OriginEndpointPolicy
+  mediatailor:
+    service_name: MediaTailor
+    resources:
+      channel: Channel
+      channelpolicy: ChannelPolicy
+      livesource: LiveSource
+      playbackconfiguration: PlaybackConfiguration
+      sourcelocation: SourceLocation
+      vodsource: VodSource
+  memorydb:
+    service_name: MemoryDB
+    resources:
+      acl: ACL
+      cluster: Cluster
+      parametergroup: ParameterGroup
+      subnetgroup: SubnetGroup
+      user: User
+  msk:
+    service_name: MSK
+    resources:
+      batchscramsecret: BatchScramSecret
+      cluster: Cluster
+      clusterpolicy: ClusterPolicy
+      configuration: Configuration
+      replicator: Replicator
+      serverlesscluster: ServerlessCluster
+      vpcconnection: VpcConnection
+  mwaa:
+    service_name: MWAA
+    resources:
+      environment: Environment
+  neptune:
+    service_name: Neptune
+    resources:
+      dbcluster: DBCluster
+  networkfirewall:
+    service_name: NetworkFirewall
+    resources:
+      firewall: Firewall
+      firewallpolicy: FirewallPolicy
+      loggingconfiguration: LoggingConfiguration
+      rulegroup: RuleGroup
+  networkmanager:
+    service_name: NetworkManager
+    resources:
+      connectattachment: ConnectAttachment
+      connectpeer: ConnectPeer
+      corenetwork: CoreNetwork
+      customergatewayassociation: CustomerGatewayAssociation
+      device: Device
+      globalnetwork: GlobalNetwork
+      link: Link
+      linkassociation: LinkAssociation
+      site: Site
+      sitetositevpnattachment: SiteToSiteVpnAttachment
+      transitgatewaypeering: TransitGatewayPeering
+      transitgatewayregistration: TransitGatewayRegistration
+      transitgatewayroutetableattachment: TransitGatewayRouteTableAttachment
+      vpcattachment: VpcAttachment
+  nimblestudio:
+    service_name: NimbleStudio
+    resources:
+      launchprofile: LaunchProfile
+      streamingimage: StreamingImage
+      studio: Studio
+      studiocomponent: StudioComponent
+  oam:
+    service_name: Oam
+    resources:
+      link: Link
+      sink: Sink
+  omics:
+    service_name: Omics
+    resources:
+      annotationstore: AnnotationStore
+      referencestore: ReferenceStore
+      rungroup: RunGroup
+      sequencestore: SequenceStore
+      variantstore: VariantStore
+      workflow: Workflow
+  opensearchserverless:
+    service_name: OpenSearchServerless
+    resources:
+      accesspolicy: AccessPolicy
+      collection: Collection
+      securityconfig: SecurityConfig
+      securitypolicy: SecurityPolicy
+      vpcendpoint: VpcEndpoint
+  opensearchservice:
+    service_name: OpenSearchService
+    resources:
+      domain: Domain
+  opsworkscm:
+    service_name: OpsWorksCM
+    resources:
+      server: Server
+  organizations:
+    service_name: Organizations
+    resources:
+      account: Account
+      organization: Organization
+      organizationalunit: OrganizationalUnit
+      policy: Policy
+      resourcepolicy: ResourcePolicy
+  osis:
+    service_name: OSIS
+    resources:
+      pipeline: Pipeline
+  panorama:
+    service_name: Panorama
+    resources:
+      applicationinstance: ApplicationInstance
+      package: Package
+      packageversion: PackageVersion
+  pcaconnectorad:
+    service_name: PCAConnectorAD
+    resources:
+      connector: Connector
+      directoryregistration: DirectoryRegistration
+      serviceprincipalname: ServicePrincipalName
+      template: Template
+      templategroupaccesscontrolentry: TemplateGroupAccessControlEntry
+  personalize:
+    service_name: Personalize
+    resources:
+      dataset: Dataset
+      datasetgroup: DatasetGroup
+      schema: Schema
+      solution: Solution
+  pinpoint:
+    service_name: Pinpoint
+    resources:
+      inapptemplate: InAppTemplate
+  pipes:
+    service_name: Pipes
+    resources:
+      pipe: Pipe
+  proton:
+    service_name: Proton
+    resources:
+      environmentaccountconnection: EnvironmentAccountConnection
+      environmenttemplate: EnvironmentTemplate
+      servicetemplate: ServiceTemplate
+  qldb:
+    service_name: QLDB
+    resources:
+      stream: Stream
+  quicksight:
+    service_name: QuickSight
+    resources:
+      analysis: Analysis
+      dashboard: Dashboard
+      dataset: DataSet
+      datasource: DataSource
+      refreshschedule: RefreshSchedule
+      template: Template
+      theme: Theme
+      topic: Topic
+      vpcconnection: VPCConnection
+  ram:
+    service_name: RAM
+    resources:
+      permission: Permission
+  rds:
+    service_name: RDS
+    resources:
+      customdbengineversion: CustomDBEngineVersion
+      dbcluster: DBCluster
+      dbclusterparametergroup: DBClusterParameterGroup
+      dbinstance: DBInstance
+      dbparametergroup: DBParameterGroup
+      dbproxy: DBProxy
+      dbproxyendpoint: DBProxyEndpoint
+      dbproxytargetgroup: DBProxyTargetGroup
+      dbsubnetgroup: DBSubnetGroup
+      eventsubscription: EventSubscription
+      globalcluster: GlobalCluster
+      optiongroup: OptionGroup
+  redshift:
+    service_name: Redshift
+    resources:
+      cluster: Cluster
+      clusterparametergroup: ClusterParameterGroup
+      clustersubnetgroup: ClusterSubnetGroup
+      endpointaccess: EndpointAccess
+      endpointauthorization: EndpointAuthorization
+      eventsubscription: EventSubscription
+      scheduledaction: ScheduledAction
+  redshiftserverless:
+    service_name: RedshiftServerless
+    resources:
+      namespace: Namespace
+      workgroup: Workgroup
+  refactorspaces:
+    service_name: RefactorSpaces
+    resources:
+      application: Application
+      environment: Environment
+      route: Route
+      service: Service
+  rekognition:
+    service_name: Rekognition
+    resources:
+      collection: Collection
+      project: Project
+      streamprocessor: StreamProcessor
+  resiliencehub:
+    service_name: ResilienceHub
+    resources:
+      app: App
+      resiliencypolicy: ResiliencyPolicy
+  resourceexplorer2:
+    service_name: ResourceExplorer2
+    resources:
+      defaultviewassociation: DefaultViewAssociation
+      index: Index
+      view: View
+  resourcegroups:
+    service_name: ResourceGroups
+    resources:
+      group: Group
+  robomaker:
+    service_name: RoboMaker
+    resources:
+      fleet: Fleet
+      robot: Robot
+      robotapplication: RobotApplication
+      robotapplicationversion: RobotApplicationVersion
+      simulationapplication: SimulationApplication
+      simulationapplicationversion: SimulationApplicationVersion
+  rolesanywhere:
+    service_name: RolesAnywhere
+    resources:
+      crl: CRL
+      profile: Profile
+      trustanchor: TrustAnchor
+  route53:
+    service_name: Route53
+    resources:
+      cidrcollection: CidrCollection
+      dnssec: DNSSEC
+      healthcheck: HealthCheck
+      hostedzone: HostedZone
+      keysigningkey: KeySigningKey
+  route53recoverycontrol:
+    service_name: Route53RecoveryControl
+    resources:
+      cluster: Cluster
+      controlpanel: ControlPanel
+      routingcontrol: RoutingControl
+      safetyrule: SafetyRule
+  route53recoveryreadiness:
+    service_name: Route53RecoveryReadiness
+    resources:
+      cell: Cell
+      readinesscheck: ReadinessCheck
+      recoverygroup: RecoveryGroup
+      resourceset: ResourceSet
+  route53resolver:
+    service_name: Route53Resolver
+    resources:
+      firewalldomainlist: FirewallDomainList
+      firewallrulegroup: FirewallRuleGroup
+      firewallrulegroupassociation: FirewallRuleGroupAssociation
+      outpostresolver: OutpostResolver
+      resolverconfig: ResolverConfig
+      resolverdnssecconfig: ResolverDNSSECConfig
+      resolverqueryloggingconfig: ResolverQueryLoggingConfig
+      resolverqueryloggingconfigassociation: ResolverQueryLoggingConfigAssociation
+      resolverrule: ResolverRule
+      resolverruleassociation: ResolverRuleAssociation
+  rum:
+    service_name: RUM
+    resources:
+      appmonitor: AppMonitor
+  s3:
+    service_name: S3
+    resources:
+      accesspoint: AccessPoint
+      bucket: Bucket
+      bucketpolicy: BucketPolicy
+      multiregionaccesspoint: MultiRegionAccessPoint
+      multiregionaccesspointpolicy: MultiRegionAccessPointPolicy
+      storagelens: StorageLens
+      storagelensgroup: StorageLensGroup
+  s3objectlambda:
+    service_name: S3ObjectLambda
+    resources:
+      accesspoint: AccessPoint
+      accesspointpolicy: AccessPointPolicy
+  s3outposts:
+    service_name: S3Outposts
+    resources:
+      accesspoint: AccessPoint
+      bucket: Bucket
+      bucketpolicy: BucketPolicy
+      endpoint: Endpoint
+  sagemaker:
+    service_name: SageMaker
+    resources:
+      app: App
+      appimageconfig: AppImageConfig
+      dataqualityjobdefinition: DataQualityJobDefinition
+      device: Device
+      devicefleet: DeviceFleet
+      domain: Domain
+      featuregroup: FeatureGroup
+      image: Image
+      imageversion: ImageVersion
+      inferenceexperiment: InferenceExperiment
+      modelbiasjobdefinition: ModelBiasJobDefinition
+      modelcard: ModelCard
+      modelexplainabilityjobdefinition: ModelExplainabilityJobDefinition
+      modelpackage: ModelPackage
+      modelpackagegroup: ModelPackageGroup
+      modelqualityjobdefinition: ModelQualityJobDefinition
+      monitoringschedule: MonitoringSchedule
+      pipeline: Pipeline
+      project: Project
+      space: Space
+      userprofile: UserProfile
+  scheduler:
+    service_name: Scheduler
+    resources:
+      schedule: Schedule
+      schedulegroup: ScheduleGroup
+  secretsmanager:
+    service_name: SecretsManager
+    resources:
+      secret: Secret
+  securityhub:
+    service_name: SecurityHub
+    resources:
+      automationrule: AutomationRule
+      standard: Standard
+  servicecatalog:
+    service_name: ServiceCatalog
+    resources:
+      cloudformationprovisionedproduct: CloudFormationProvisionedProduct
+      serviceaction: ServiceAction
+      serviceactionassociation: ServiceActionAssociation
+  servicecatalogappregistry:
+    service_name: ServiceCatalogAppRegistry
+    resources:
+      application: Application
+      attributegroup: AttributeGroup
+      attributegroupassociation: AttributeGroupAssociation
+      resourceassociation: ResourceAssociation
+  ses:
+    service_name: SES
+    resources:
+      configurationset: ConfigurationSet
+      configurationseteventdestination: ConfigurationSetEventDestination
+      contactlist: ContactList
+      dedicatedippool: DedicatedIpPool
+      emailidentity: EmailIdentity
+      template: Template
+      vdmattributes: VdmAttributes
+  shield:
+    service_name: Shield
+    resources:
+      drtaccess: DRTAccess
+      proactiveengagement: ProactiveEngagement
+      protection: Protection
+      protectiongroup: ProtectionGroup
+  signer:
+    service_name: Signer
+    resources:
+      profilepermission: ProfilePermission
+      signingprofile: SigningProfile
+  simspaceweaver:
+    service_name: SimSpaceWeaver
+    resources:
+      simulation: Simulation
+  sns:
+    service_name: SNS
+    resources:
+      topic: Topic
+      topicinlinepolicy: TopicInlinePolicy
+      topicpolicy: TopicPolicy
+  sqs:
+    service_name: SQS
+    resources:
+      queue: Queue
+      queueinlinepolicy: QueueInlinePolicy
+      queuepolicy: QueuePolicy
+  ssm:
+    service_name: SSM
+    resources:
+      association: Association
+      document: Document
+      parameter: Parameter
+      resourcedatasync: ResourceDataSync
+      resourcepolicy: ResourcePolicy
+  ssmcontacts:
+    service_name: SSMContacts
+    resources:
+      contact: Contact
+      contactchannel: ContactChannel
+      plan: Plan
+      rotation: Rotation
+  ssmincidents:
+    service_name: SSMIncidents
+    resources:
+      replicationset: ReplicationSet
+      responseplan: ResponsePlan
+  sso:
+    service_name: SSO
+    resources:
+      assignment: Assignment
+      instanceaccesscontrolattributeconfiguration: InstanceAccessControlAttributeConfiguration
+      permissionset: PermissionSet
+  stepfunctions:
+    service_name: StepFunctions
+    resources:
+      activity: Activity
+      statemachine: StateMachine
+      statemachinealias: StateMachineAlias
+      statemachineversion: StateMachineVersion
+  supportapp:
+    service_name: SupportApp
+    resources:
+      accountalias: AccountAlias
+      slackchannelconfiguration: SlackChannelConfiguration
+      slackworkspaceconfiguration: SlackWorkspaceConfiguration
+  synthetics:
+    service_name: Synthetics
+    resources:
+      canary: Canary
+      group: Group
+  systemsmanagersap:
+    service_name: SystemsManagerSAP
+    resources:
+      application: Application
+  timestream:
+    service_name: Timestream
+    resources:
+      database: Database
+      scheduledquery: ScheduledQuery
+      table: Table
+  transfer:
+    service_name: Transfer
+    resources:
+      agreement: Agreement
+      certificate: Certificate
+      connector: Connector
+      profile: Profile
+      workflow: Workflow
+  verifiedpermissions:
+    service_name: VerifiedPermissions
+    resources:
+      identitysource: IdentitySource
+      policy: Policy
+      policystore: PolicyStore
+      policytemplate: PolicyTemplate
+  voiceid:
+    service_name: VoiceID
+    resources:
+      domain: Domain
+  vpclattice:
+    service_name: VpcLattice
+    resources:
+      accesslogsubscription: AccessLogSubscription
+      authpolicy: AuthPolicy
+      listener: Listener
+      resourcepolicy: ResourcePolicy
+      rule: Rule
+      service: Service
+      servicenetwork: ServiceNetwork
+      servicenetworkserviceassociation: ServiceNetworkServiceAssociation
+      servicenetworkvpcassociation: ServiceNetworkVpcAssociation
+      targetgroup: TargetGroup
+  wafv2:
+    service_name: WAFv2
+    resources:
+      ipset: IPSet
+      loggingconfiguration: LoggingConfiguration
+      regexpatternset: RegexPatternSet
+      rulegroup: RuleGroup
+      webacl: WebACL
+      webaclassociation: WebACLAssociation
+  wisdom:
+    service_name: Wisdom
+    resources:
+      assistant: Assistant
+      assistantassociation: AssistantAssociation
+      knowledgebase: KnowledgeBase
+  workspaces:
+    service_name: WorkSpaces
+    resources:
+      connectionalias: ConnectionAlias
+  workspacesweb:
+    service_name: WorkSpacesWeb
+    resources:
+      browsersettings: BrowserSettings
+      identityprovider: IdentityProvider
+      ipaccesssettings: IpAccessSettings
+      networksettings: NetworkSettings
+      portal: Portal
+      truststore: TrustStore
+      useraccessloggingsettings: UserAccessLoggingSettings
+      usersettings: UserSettings
+  xray:
+    service_name: XRay
+    resources:
+      group: Group
+      resourcepolicy: ResourcePolicy
+      samplingrule: SamplingRule
