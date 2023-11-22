@@ -1136,9 +1136,11 @@ services:
     service_name: RDS
     resources:
       customdbengineversion: CustomDBEngineVersion
+      cluster: DBCluster
       dbcluster: DBCluster
       dbclusterparametergroup: DBClusterParameterGroup
       dbinstance: DBInstance
+      db: DBInstance
       dbparametergroup: DBParameterGroup
       dbproxy: DBProxy
       dbproxyendpoint: DBProxyEndpoint

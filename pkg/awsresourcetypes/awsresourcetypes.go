@@ -2,12 +2,9 @@ package awsresourcetypes
 
 import (
 	"errors"
-	"fmt"
-	"os"
-	"path/filepath"
+	"strings"
 
-	"github.com/massdriver-cloud/aws-resource-types/pkg/parser"
-	"gopkg.in/yaml.v3"
+	"github.com/massdriver-cloud/aws-utils/pkg/parser"
 )
 
 type ServiceList struct {
@@ -22,31 +19,28 @@ type Service struct {
 type ResourceType struct {
 	TypeName   string
 	ResourceId string
+	Region     string
+	FullARN    string
 }
 
 func Lookup(arn string) (ResourceType, error) {
-	table, err := createLookupTable()
-
+	parsedArn, err := parser.Parse(arn)
 	if err != nil {
-		panic(err)
+		return ResourceType{}, err
 	}
 
-	parsedArn := parser.Parse(arn)
-	fmt.Println(parsedArn)
 	baseResourceType := "AWS::"
 
-	service, ok := table.Services[parsedArn.Service]
-
+	service, ok := lookupTable.Services[parsedArn.Service]
 	if !ok {
-		return ResourceType{}, errors.New("Service is unsuported")
+		return ResourceType{}, errors.New("Service is unsuported:" + parsedArn.Service)
 	}
 
 	baseResourceType += service.ServiceName
 
-	resource, ok := service.Resources[parsedArn.Resource]
-
+	resource, ok := service.Resources[strings.ToLower(strings.ReplaceAll(parsedArn.Resource, "-", ""))]
 	if !ok {
-		return ResourceType{}, errors.New("Resource Type is unsupported for service")
+		return ResourceType{}, errors.New("resource type is unsupported for service:" + parsedArn.Service + ":" + parsedArn.Resource)
 	}
 
 	baseResourceType += ("::" + resource)
@@ -54,25 +48,7 @@ func Lookup(arn string) (ResourceType, error) {
 	return ResourceType{
 		TypeName:   baseResourceType,
 		ResourceId: parsedArn.ResourceId,
+		Region:     parsedArn.Region,
+		FullARN:    arn,
 	}, nil
-}
-
-// I hope we can move this to compile time.
-func createLookupTable() (ServiceList, error) {
-	var serviceList ServiceList
-
-	filename, _ := filepath.Abs("./resource_types_lookup.yaml")
-	yamlFile, err := os.ReadFile(filename)
-
-	if err != nil {
-		return serviceList, err
-	}
-
-	err = yaml.Unmarshal(yamlFile, &serviceList)
-
-	if err != nil {
-		return serviceList, err
-	}
-
-	return serviceList, nil
 }
