@@ -1,0 +1,36 @@
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.21
+      - name: Test
+        run: go test -v ./...
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 1.21
+      - name: Generate docs
+        run: make generate
+      - name: Test for changes
+        run: |
+          if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
+            git status --porcelain --untracked-files=no
+            echo "Generated file changes not commited! Run 'make generate' and commit changes"
+            exit 1
+          fi
